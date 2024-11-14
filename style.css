@@ -1,0 +1,85 @@
+
+body{
+  height:100vh;
+  width: 100%;
+  background-image: linear-gradient(135deg, #323135 0, #201e2d 25%, #080826 50%, #000020 75%, #00001b 100%); 
+  display:flex;
+  align-items: center;
+  justify-content:center;
+}
+.contenedor{
+  position :relative ;
+  height: 650px;
+  width: 400px;
+  background:transparent ;
+    display:flex;
+  align-items: center;
+  justify-content:center;
+  overflow:hidden;
+  border-radius:10px 10px 10px 10px;
+  
+}
+.animacion{
+ 
+  position:absolute ;
+  
+  height:400px;
+  width:800px;
+background-image: linear-gradient(to right top, transparent 10%, purple 90%);
+animation: rotar 2s linear infinite;
+}
+@keyframes rotar{
+  0%{transform:rotate(0deg)}
+  100%{
+    transform:rotate(-360deg);
+  }
+}
+.principal{
+  border-radius :8px 8px 8px 8px ;
+  
+  position:absolute ;
+  height:640px;
+  width:390px;
+  background-image: radial-gradient(circle at 50% 96.01%, #2f96e4 0, #183c5e 50%, #000000 100%);
+  
+}
+.portada{
+  position:absolute ;
+  display: flex ;
+  justify-content:center ;
+  align-items:center ;
+  border-radius :8px 8px 8px 8px ;
+  width:100%;
+  height:160px;
+  background:purple ;
+}
+.foto1{
+  position:absolute ;
+  height:100px;
+  width: 100px;
+  background :deeppink ;
+  border-radius :50%;
+  left:45px ;
+}
+
+.foto3{
+  position:absolute ;
+  height:100px;
+  width: 100px;
+  background :deeppink ;
+  border-radius :50%;
+   right:45px;
+}
+.foto{
+  
+  position :absolute ;
+  height:150px;
+  width: 150px;
+  background :black ;
+  border-radius :50%;
+  
+}
+.foto:hover{
+  border-radius:0;
+  
+}
